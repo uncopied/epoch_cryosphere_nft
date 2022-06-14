@@ -1,0 +1,334 @@
+#pragma version 6
+txn Fee
+global MinTxnFee
+<=
+txn Lease
+global ZeroAddress
+==
+&&
+txn RekeyTo
+global ZeroAddress
+==
+&&
+global GroupSize
+int 2
+==
+bnz main_l6
+global GroupSize
+int 3
+==
+bnz main_l5
+global GroupSize
+int 12
+==
+bnz main_l4
+err
+main_l4:
+global GroupSize
+int 12
+==
+gtxn 0 TypeEnum
+int pay
+==
+&&
+gtxn 0 Amount
+int 12
+==
+&&
+gtxn 0 Receiver
+addr E6U45JTJJQKGIQXECBTUAEARHU7PKCSRVLR5Q4PWT2EDG5XSOVOMK77LUA
+==
+&&
+gtxn 0 CloseRemainderTo
+global ZeroAddress
+==
+&&
+gtxn 1 TypeEnum
+int axfer
+==
+&&
+gtxn 1 AssetAmount
+int 0
+==
+&&
+gtxn 1 Sender
+gtxn 0 Sender
+==
+&&
+gtxn 1 Sender
+gtxn 1 AssetReceiver
+==
+&&
+gtxn 1 AssetCloseTo
+global ZeroAddress
+==
+&&
+gtxn 1 XferAsset
+int 78961298
+==
+&&
+gtxn 2 TypeEnum
+int axfer
+==
+&&
+gtxn 2 AssetAmount
+int 1
+==
+&&
+gtxn 2 AssetReceiver
+gtxn 1 Sender
+==
+&&
+gtxn 2 AssetCloseTo
+gtxn 1 Sender
+==
+&&
+gtxn 2 XferAsset
+int 78961298
+==
+&&
+gtxn 3 TypeEnum
+int pay
+==
+&&
+gtxn 3 Amount
+int 4
+==
+&&
+gtxn 3 Receiver
+addr HV7FWNWDGRTAP4WOOW7T6ZCFELJ4OSFWKELNCPRSLS4HHAODOHLI6IFNCU
+==
+&&
+gtxn 3 CloseRemainderTo
+global ZeroAddress
+==
+&&
+gtxn 4 TypeEnum
+int pay
+==
+&&
+gtxn 4 Amount
+int 4
+==
+&&
+gtxn 4 Receiver
+addr 26QGZSQQRNPNKB6PS5KWKTZ4EUXB7XYM4DHBYKL3JHBAEAYOWBBXRF5ZFY
+==
+&&
+gtxn 4 CloseRemainderTo
+global ZeroAddress
+==
+&&
+gtxn 5 TypeEnum
+int pay
+==
+&&
+gtxn 5 Amount
+int 4
+==
+&&
+gtxn 5 Receiver
+addr P5P4TLUPASQ765EY7A3MVLN5HA7F55FX3CWAVZH6UQHMRY2TT37S7HHFVI
+==
+&&
+gtxn 5 CloseRemainderTo
+global ZeroAddress
+==
+&&
+gtxn 6 TypeEnum
+int pay
+==
+&&
+gtxn 6 Amount
+int 4
+==
+&&
+gtxn 6 Receiver
+addr ZZY2232VV7JT7V53O3Q3USKOIYHQFOVZC3JMX3KKNZIS6FT4C7JYKAHZ4Q
+==
+&&
+gtxn 6 CloseRemainderTo
+global ZeroAddress
+==
+&&
+gtxn 7 TypeEnum
+int pay
+==
+&&
+gtxn 7 Amount
+int 4
+==
+&&
+gtxn 7 Receiver
+addr UYV5MBXUPA5LFPDHENPLAYB2YQWYFH5JIXC3GVQN33FKHK5O4TT2VI35ZI
+==
+&&
+gtxn 7 CloseRemainderTo
+global ZeroAddress
+==
+&&
+gtxn 8 TypeEnum
+int pay
+==
+&&
+gtxn 8 Amount
+int 4
+==
+&&
+gtxn 8 Receiver
+addr JF2ZUJ6C3HJTTB5GHOYDT733VPQGNTE5XVVWADUSZRFHTFYW6HHSR4B5OY
+==
+&&
+gtxn 8 CloseRemainderTo
+global ZeroAddress
+==
+&&
+gtxn 9 TypeEnum
+int pay
+==
+&&
+gtxn 9 Amount
+int 4
+==
+&&
+gtxn 9 Receiver
+addr CIAV5DLVUF52WMDYDIBB6JPJPYLOG7HJBE4LHLWBBG2MIS5LIUIB4IG4GQ
+==
+&&
+gtxn 9 CloseRemainderTo
+global ZeroAddress
+==
+&&
+gtxn 10 TypeEnum
+int pay
+==
+&&
+gtxn 10 Amount
+int 7
+==
+&&
+gtxn 10 Receiver
+addr LAYPCJKT4ZASLKKXYYDDGJZUJQF3CFSNTLMAYUO37HRRJJHKSV2LZOV6UU
+==
+&&
+gtxn 10 CloseRemainderTo
+global ZeroAddress
+==
+&&
+b main_l7
+main_l5:
+global GroupSize
+int 3
+==
+gtxn 0 TypeEnum
+int pay
+==
+&&
+gtxn 0 Amount
+int 0
+==
+&&
+gtxn 0 Sender
+addr E6U45JTJJQKGIQXECBTUAEARHU7PKCSRVLR5Q4PWT2EDG5XSOVOMK77LUA
+==
+&&
+gtxn 0 CloseRemainderTo
+global ZeroAddress
+==
+&&
+gtxn 1 TypeEnum
+int axfer
+==
+&&
+gtxn 1 AssetAmount
+int 0
+==
+&&
+gtxn 1 Sender
+gtxn 0 Receiver
+==
+&&
+gtxn 1 Sender
+gtxn 1 AssetReceiver
+==
+&&
+gtxn 1 AssetCloseTo
+global ZeroAddress
+==
+&&
+gtxn 1 XferAsset
+int 78961298
+==
+&&
+gtxn 2 TypeEnum
+int axfer
+==
+&&
+gtxn 2 AssetAmount
+int 1
+==
+&&
+gtxn 2 Sender
+addr E6U45JTJJQKGIQXECBTUAEARHU7PKCSRVLR5Q4PWT2EDG5XSOVOMK77LUA
+==
+&&
+gtxn 2 AssetReceiver
+gtxn 1 Sender
+==
+&&
+gtxn 2 AssetCloseTo
+global ZeroAddress
+==
+&&
+gtxn 2 XferAsset
+int 78961298
+==
+&&
+b main_l7
+main_l6:
+global GroupSize
+int 3
+==
+gtxn 0 TypeEnum
+int axfer
+==
+&&
+gtxn 0 AssetAmount
+int 1
+==
+&&
+gtxn 0 XferAsset
+int 78961298
+==
+&&
+gtxn 0 AssetReceiver
+addr E6U45JTJJQKGIQXECBTUAEARHU7PKCSRVLR5Q4PWT2EDG5XSOVOMK77LUA
+==
+&&
+gtxn 0 AssetCloseTo
+addr E6U45JTJJQKGIQXECBTUAEARHU7PKCSRVLR5Q4PWT2EDG5XSOVOMK77LUA
+==
+&&
+gtxn 1 TypeEnum
+int pay
+==
+&&
+gtxn 1 Amount
+int 0
+==
+&&
+gtxn 1 Sender
+gtxn 1 Sender
+==
+&&
+gtxn 1 Receiver
+addr E6U45JTJJQKGIQXECBTUAEARHU7PKCSRVLR5Q4PWT2EDG5XSOVOMK77LUA
+==
+&&
+gtxn 1 CloseRemainderTo
+addr E6U45JTJJQKGIQXECBTUAEARHU7PKCSRVLR5Q4PWT2EDG5XSOVOMK77LUA
+==
+&&
+main_l7:
+&&
+return
